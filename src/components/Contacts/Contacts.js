@@ -3,7 +3,9 @@ import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
 import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
+import emailjs from 'emailjs-com';
 import { makeStyles } from '@material-ui/core/styles';
+
 import {
     FaTwitter,
     FaLinkedinIn,
@@ -139,17 +141,38 @@ function Contacts() {
                     email: email,
                     message: message,
                 };
+                const templateParams = {
+                to_email:'suchethgr@gmail.com',
+                from_name:name,
+                from_email:email,
+                message:message
+                }
+                emailjs.send('service_h6p8t6i', 'template_jzrkbnd', templateParams, 'eb36j9DvVYNN4Lqe0').then(
+                    (response)=>{
+                        console.log('Email sent successfully:', response);
+                        setSuccess(true);
+                        setErrMsg('');
+                        setName('');
+                        setEmail('');
+                        setMessage('');
+                        setOpen(false);
+                    },
+                    (error) => {
+                        console.error('Error sending email:', error);
+                        setErrMsg('Error sending email');
+                        setOpen(true);
+                    }
+                )
+                // axios.post(contactsData.sheetAPI, responseData).then((res) => {
+                //     console.log('success');
+                //     setSuccess(true);
+                //     setErrMsg('');
 
-                axios.post(contactsData.sheetAPI, responseData).then((res) => {
-                    console.log('success');
-                    setSuccess(true);
-                    setErrMsg('');
-
-                    setName('');
-                    setEmail('');
-                    setMessage('');
-                    setOpen(false);
-                });
+                //     setName('');
+                //     setEmail('');
+                //     setMessage('');
+                //     setOpen(false);
+                // });
             } else {
                 setErrMsg('Invalid email');
                 setOpen(true);
