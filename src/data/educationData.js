@@ -1,23 +1,16 @@
 export const educationData = [
     {
         id: 1,
-        institution: 'Marble Hills Middle School',
-        course: 'Higher Secondary Education',
-        startYear: '2007',
-        endYear: '2015'
+        institution: 'University of Southern California',
+        course: 'MS in Computer Science',
+        startYear: '2023',
+        endYear: '2024'
     },
     {
         id: 2,
-        institution: 'Somerset School of Science',
+        institution: 'REVA University',
         course: 'Bachelor of Technology',
-        startYear: '2015',
-        endYear: '2019'
-    },
-    {
-        id: 3,
-        institution: 'Hawking University, Cambridge',
-        course: 'Master of Technology',
-        startYear: '2019',
-        endYear: 'Present'
+        startYear: '2017',
+        endYear: '2021'
     },
 ]

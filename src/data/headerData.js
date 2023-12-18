@@ -1,9 +1,9 @@
 import resume from '../assets/pdf/resume.pdf'
 
 export const headerData = {
-    name: 'Jane Doe',
-    title: "Web Developer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
+    name: 'Sucheth Govindaraju',
+    title: "Software Engineer, Full Stack Developer, and an Cloud Enthusiast",
+    desciption:"I am a self-motivated, creative and technically sound computer/software engineer with a keen interest in learning new technologies to build enterprise applications. Capable of functioning both in a team and on one's own. I am consummate in the fields of Enterprise Software Development, Web Development, and Cloud Computing. ",
     image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
     resumePdf: resume
 }
