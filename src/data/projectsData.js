@@ -14,8 +14,8 @@ export const projectsData = [
         projectName: 'Ebay E-Commerce Web App',
         projectDesc: 'Developed a responsive web app with an Angular frontend and a Node.js-MongoDB backend. Developed REST APIs using Node.js. Deployed the complete project on GCP. ',
         tags: ['Angular', 'Node.js', 'Express.js','MongoDB','GCP'],
-        code: 'https://web-tech-hw-3.wl.r.appspot.com/',
-        demo: 'https://github.com/sucheth19/sucheth19.github.io/tree/10242023/hw3',
+        code: 'https://github.com/sucheth19/sucheth19.github.io/tree/10242023/hw3',
+        demo:   'https://web-tech-hw-3.wl.r.appspot.com/',
         image: three
     },
     {
