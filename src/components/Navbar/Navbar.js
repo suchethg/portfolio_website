@@ -106,10 +106,10 @@ function Navbar() {
         drawerLinks: {
             fontFamily: 'var(--primaryFont)',
             width: '50%',
-            fontSize: '1.3rem',
+            fontSize: '1rem',
             fontWeight: 600,
             [t.breakpoints.down('sm')]: {
-                fontSize: '1.125rem',
+                fontSize: '1rem',
             },
         },
         drawerIcon: {
@@ -280,7 +280,40 @@ function Navbar() {
                                 </div>
                             </NavLink>
                         </Fade>
-
+                        <Fade left>
+                            <NavLink
+                                to='/#projects'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <FaFolderOpen
+                                        className={classes.drawerIcon}
+                                    />
+                                    <span className={classes.drawerLinks} style={{fontSize:"1rem"}}>
+                                        Projects
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>
+                        <Fade left>
+                            <NavLink
+                                to='/#achievement'
+                                smooth={true}
+                                spy='true'
+                                duration={2000}
+                            >
+                                <div className={classes.drawerItem}>
+                                    <FaFolderOpen
+                                        className={classes.drawerIcon}
+                                    />
+                                    <span className={classes.drawerLinks} style={{fontSize:"1rem"}}>
+                                        Certifications
+                                    </span>
+                                </div>
+                            </NavLink>
+                        </Fade>
                         <Fade left>
                             <NavLink
                                 to='/#contacts'
