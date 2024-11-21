@@ -1,35 +1,304 @@
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-  <base target="_blank">
-  <meta charset="UTF-8" />
-  <title>Sucheth Govindaraju</title>
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
-  <script type="text/javascript" src="js/jquery.particleground.js"></script>
-  <script type="text/javascript" src="js/demo.js"></script>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata of the Webpage -->
+    <!-- Character-set Metadata -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Viewport Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Description Metadata-->
+    <meta name="description" content="Portfolio Website" />
+    <!-- Author Metadata -->
+    <meta name="author" content="Sucheth Govindaraju" />
+    <!-- Keyword Metadata -->
+    <meta
+      name="keywords"
+      content="Sucheth Govindaraju"
+    />
+    <!-- Webpage Logo -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <!-- Webpage Title -->
+    <title>Sucheth Govindaraju</title>
 
-<body>
+    <!-- Import CSS: Main Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-<div id="particles">
-  <div id="intro">
-      <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">Sucheth Govindaraju<a href="Sucheth_Resume.pdf" style="color: white;"><img src="./assets/resume.png" height="35" width="35"></a></h2>
-      <h3><span style="font-family: 'Syncopate', sans-serif; color: #E83951; font-weight: 700; letter-spacing: 2px;"><span>Full Stack Developer</span> | DevOps | Cloud Engineer</span></h3>
-      <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
-  <div style="margin-top:10px;">
-      <a href="https://www.linkedin.com/in/suchethg/" style="color: white;"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://github.com/suchethg/" style="color: white;"><i class="fab fa-github" style="font-size: 2em;"></i></a>
-    &nbsp
-  <a href="mailto:suchethg@usc.edu" style="color: white;">
-    <i class="fas fa-envelope" style="font-size: 2em;"></i>
-  </a>
-  </div>
-  </div>
-</div>
+  <body>
+    <div id="particles-js">
+      <div class="header">
+        <h1>
+          <span class="site-title">Sucheth Govindaraju</span>
+          <span class="site-description">FullStack Developer • DevOps • Cloud Infrastructure</span>
+        </h1>
+        <div class="header-icons">
+          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/suchethg/">
+            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a aria-label="My Github Profile" target="_blank" href="https://github.com/suchethg">
+            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+          <a aria-label="Send Email" href="mailto:suchethgr@gmail.com" target="_blank"
+            ><i class="icon fa fa-envelope"></i
+          ></a>
+        </div>
+        <div class="header-links">
+          <a class="link" href="#about" data-scroll>About Me</a>
+          <a class="link" href="#experience" data-scroll>Professional Experience</a>
+          <a class="link" href="#projects" data-scroll>Projects</a>
+        </div>
+      </div>
+      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
 
-</body>
+    <!-- About Section -->
+    <section id="about">
+      <!-- User Introduction-->
+      <div class="user-details">
+        <h1>My Story</h1>
+        <p>
+          I'm a passionate software engineer with Master of Science in Computer Science at the University of Southern California. With a solid foundation in DevOps, Cloud Computing, and Full-Stack development, I thrive on building scalable, high-performance applications.
+        </p>
+      </div>
+
+      <!-- User Specifics -->
+      <div class="user">
+        <!-- Technology Stack #1: Languages -->
+        <div class="tech">
+          <h2>Languages</h2>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" height="70px" width="70px"/>
+          <i class="devicon-java-plain-wordmark colored"></i>
+          <i class="devicon-csharp-plain colored"></i>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg"  height="50px" width="50px"/>
+          <i class="devicon-javascript-plain colored"></i>
+          <i class="devicon-typescript-plain colored"></i>
+          <i class="devicon-php-plain colored"></i>
+        </div>
+
+        <!-- Technology Stack #2: Front-End -->
+        <div class="tech">
+          <h2>Front-End</h2>
+          <i class="devicon-react-original colored"></i>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" height="70px" width="70px"/>
+          <i class="devicon-angularjs-plain colored"></i>
+          <i class="devicon-bootstrap-plain-wordmark colored"></i>
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark colored"></i>
+        </div>
+
+        <!-- Technology Stack #3: Back-End -->
+        <div class="tech">
+          <h2>Back-End</h2>
+          <i class="devicon-nodejs-plain colored"></i>
+          <i class="devicon-express-original-wordmark colored"></i>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-plain-wordmark.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/magento/magento-original-wordmark.svg" height="70px" width="70px"/>
+          <i class="devicon-mongodb-plain-wordmark colored"></i>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" height="70px" width="70px"/>
+          <i class="devicon-postgresql-plain-wordmark colored"></i>
+        </div>
+
+        <!-- Technology Stack #4: Tools -->
+        <div class="tech">
+          <h2>Tools</h2>
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original-wordmark.svg" height="70px" width="70px" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg" height="70px" width="70px" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg" height="90px" width="90px"/>
+          <i class="devicon-visualstudio-plain colored"></i>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original-wordmark.svg" height="70px" width="70px" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original-wordmark.svg" height="70px" width="70px" />
+          <i class="devicon-gitlab-plain-wordmark colored"></i>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain-wordmark.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-plain-wordmark.svg" height="70px" width="70px"/>
+          <i class="devicon-bitbucket-original-wordmark colored"></i>
+          <i class="devicon-nginx-original colored"></i>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/yaml/yaml-original.svg"  height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original-wordmark.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original-wordmark.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original-wordmark.svg"  height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" height="70px" width="70px"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" height="70px" width="70px"/>
+          <i class="devicon-github-plain-wordmark colored"></i>
+          <i class="devicon-docker-plain-wordmark colored"></i>
+        </div>
+      </div>
+    </section>
+    <section class="experience" id="experience">
+      <h2 class="section-title">Experience</h2>
+    
+      <div class="timeline">
+        <div class="timeline-item"> 
+          <!-- Circle Point -->
+          <div class="timeline-point"></div>
+          <div class="timeline-content glass-box">
+            <img src="./assets/img/lexisnexis.png" alt="LexisNexis Logo" class="timeline-logo" >
+            <h4>Software Engineer Intern | June 2024 – Present</h4>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <!-- Circle Point -->
+          <div class="timeline-point"></div>
+          <div class="timeline-content glass-box">
+            <img src="./assets/img/usc.jpg" alt="USC Information Sciences Institute Logo" class="timeline-logo" height="60%" width="100%">
+            <h4>Full Stack Developer | Sept 2023 – Dec 2023</h4>
+           
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <!-- Circle Point -->
+          <div class="timeline-point"></div>
+          <div class="timeline-content glass-box">
+            <img src="./assets/img/DXC.png" alt="DXC Technology" class="timeline-logo" height="60%" width="100%">
+            <h4>Associate Professional Software Engineer | June 2021 – Sept 2022</h4>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <div class="container">
+        <div class="heading">
+          <h1>Projects</h1>
+        </div>
+        <div class="projects-section">
+          <div class="project-box">
+            <img src="./assets/img/ebay.png" alt="Ebay E-Commerce App" class="project-image">
+            <div class="project-content">
+              <h3 class="project-title"> Ebay E-Commerce App</h3>
+              <p class="project-description">
+                Developed a responsive web app with an Angular frontend and a Node.js-MongoDB backend, incorporating advanced geolocation-based product search. Developed REST APIs using Node.js. Deployed the complete project on GCP.
+                Extended the project’s reach by building an Android app using Kotlin, offering a seamless shopping experience for customers across both web and mobile platforms.   </p>
+              <p class="project-details">
+                Technology: Angular, Node.js, RESTAPI, MongoDB, Kotlin, GCP
+              </p>
+      <a href="https://github.com/suchethg/Ebay-Web-App/tree/10242023/hw3" class="project-link" target="_blank">View on GitHub</a>
+
+            </div>
+          </div>
+          <div class="project-box">
+            <img src="./assets/img/trojans.png" alt="Trojans Events App" class="project-image">
+            <div class="project-content">
+              <h3 class="project-title">Trojans Events App</h3>
+              <p class="project-description">
+              
+Developed a full-stack web app for college event booking, enabling event creation and user registration. Implemented secure access with JWT-based authentication and authorization. Designed a dynamic bar chart to display bookings by event price. Built a GraphQL API with Node.js and MongoDB to manage registrations, event details, and enrollments efficiently.  </p>
+              <p class="project-details">
+                Technology: React, Node.js, GraphQL, MongoDB, D3.js, JWT
+              </p>
+              <a href="https://github.com/suchethg/TrojanEvents/tree/main/TrojanEvents" class="project-link" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        <div class="project-box">
+          <img src="./assets/img/microservices.png" alt="Microservices Video Conversion Application" class="project-image">
+          <div class="project-content">
+            <h3 class="project-title">Microservices Video to MP3 Application</h3>
+            <p class="project-description">
+              Developed a scalable microservices architecture using Python, Kubernetes, RabbitMQ, MongoDB, MySQL, JWT, and Docker for video-to-MP3 conversion, deploying services with StatefulSet and Ingress.
+              Implemented efficient data handling and asynchronous communication, enabling video storage with MongoDB and GridFS, and using RabbitMQ for conversion and notifications. 
+            </p>
+            <p class="project-details">
+              Technology: Docker, Kubernetes, Flask, MySQL, MongoDB, Python, RabbitMQ
+            </p>
+                        <a href="https://github.com/suchethg/Microservices-Video-Conversion-Application/tree/main/python/src" class="project-link" target="_blank">View on GitHub</a>
+            
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="./assets/img/vmware.png" alt="Deployment of Multi-Tier Web Application on Kubernetes" class="project-image">
+          <div class="project-content">
+            <h3 class="project-title">Deployment of Multi-Tier Web Application on Kubernetes</h3>
+            <p class="project-description">
+              Deployed a multi-tier web app on a Kubernetes cluster, ensuring high availability with Nginx load balancing, enhanced Memcached performance, and reliable messaging via RabbitMQ. Automated the setup using IaC tools like VirtualBox and Vagrant, configured persistent MySQL storage with EBS volumes, and managed resources using Kubernetes definitions. </p>
+            <p class="project-details">
+              Technology:  Kubernetes, Nginx, RabbitMQ, MySQL, VirtualBox, Vagrant
+            </p>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; Sucheth Govindaraju, 2024</p>
+    </footer>
+
+    <!-- Import JS: Particles Theme -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Import JS: Sweet Scroll -->
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <!-- Import JS: Google Analytics -->
+    <script src="./assets/js/google-analytics.js"></script>
+    <!-- Import JS: Main Script -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+      const projectHeading = document.querySelectorAll(".wrapper");
+const projectImage = document.querySelectorAll(".project-image");
+
+let headingNo = 0;
+let imageNo = 0;
+let imageIndex = 0;
+
+projectImage.forEach((e) => {
+  gsap.set(e, {
+    opacity: 0.2,
+     xPercent: "100",
+  });
+  e.dataset.ids = imageNo;
+  imageNo++;
+});
+
+projectHeading.forEach((e) => {
+  gsap.to(e, {
+    scrollTrigger: {
+      trigger: e,
+      start: "-5% center",
+      end: "bottom center",
+      scrub: true,
+      // markers: true,
+      toggleClass: "active"
+    },
+    color: "#0b2035"
+  });
+  imageIndex++;
+
+  e.dataset.ids = headingNo;
+  headingNo++;
+
+  addEventListener("scroll", (event) => {
+    projectImage.forEach((img) => {
+      if (e.dataset.ids === img.dataset.ids) {
+        if (e.classList.contains("active")) {
+          gsap.to(img, {
+          opacity: 1,
+          xPercent: "0",
+        });
+        } else {
+          gsap.to(img, {
+          opacity: .3,
+          xPercent: "100",
+        });
+        }
+      }
+    });
+  });
+});
+
+    </script>
+  </body>
 </html>
