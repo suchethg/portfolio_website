@@ -1,1 +1,1 @@
-# <a href="https://people.umass.edu/avsingh" target="_blank">My Alternate Portfolio Website</a>
+# <a href="" target="_blank">My Portfolio Website</a>
