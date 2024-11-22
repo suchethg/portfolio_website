@@ -4979,24 +4979,9 @@ a img {
         width: 80%
     }
 }
-
-.tech {
-    margin: 10px
-}
-
-.user {
-    text-align: center;
-    font-size: 60px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.user p {
-    font-size: 16px
-}
-
+ 
+  
+ 
 @media only screen and (min-width:550px) {
     .user {
         flex-wrap: nowrap;
@@ -5008,97 +4993,111 @@ a img {
     text-align: center;
     margin: 5px auto
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-#projects {
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    color: #1488CC;
+}
+
+
+/* Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Image */
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Ensure the image covers the available space without distortion */
+    border-bottom: 2px solid #1488CC;
+}
+
+/* Project Content */
+.project-content {
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto
+    height: 100%; /* Make sure content stretches to fill the space */
 }
 
-@media only screen and (min-width:550px) {
-    #projects {
-        width: 80%
-    }
+.project-title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #5347a8;
 }
 
-.user-projects {
-    margin: 20px auto
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+    flex-grow: 1; /* Allow description to grow and take available space */
 }
 
-.user-projects img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px
-}
-
-.user-projects h5 {
-    margin: 0
-}
-
-.user-projects li {
-    color: #1488CC;
-    font-size: 1.1rem
-}
-
-.user-projects p {
-    margin-right: 5px
-}
-
-@media only screen and (min-width:550px) {
-    .contents {
-        margin-left: 0;
-        width: 48%
-    }
-
-    .contents,
-    .contents-right {
-        margin-top: -5%
-    }
-
-    .contents-right,
-    .images-right {
-        float: right;
-        width: 48%
-    }
-
-    .images-right img {
-        float: right
-    }
-
-    .images-left {
-        float: left;
-        width: 48%
-    }
-
-    .images-left img {
-        float: left
-    }
+.project-details {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
 }
 
 .project-link {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 5px;
-    color: #1488CC;
-    background-color: transparent;
-    border: 1px solid #1488CC;
-    border-radius: 10px;
-    text-align: center;
-    outline: 0;
+    display: block;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #1488CC;
+    border-radius: 5px;
     text-decoration: none;
-    cursor: pointer;
-    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
+    transition: background-color 0.3s ease;
+    text-align: center;
 }
 
-.project-link:active,
 .project-link:hover {
     background-color: #5347a8;
-    border-color: #5347a8;
-    color: #fff;
-    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .project-image {
+        height: 150px;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
 }
 
 .footer {
@@ -5478,6 +5477,7 @@ a img {
     background-color: #ffffff; /* Background color */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hover effect */
+    text-align: center;
   }
   
   .project-box:hover {
@@ -5487,10 +5487,11 @@ a img {
   
   /* Image styling */
   .project-image {
-    width: 120px; /* Adjust as needed */
-    height: 120px; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for the image */
-    object-fit: cover; /* Ensure the image fills the area without distortion */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block; /* Makes the image a block element */
+    margin: 0 auto; 
   }
   
   /* Content within the project box */
@@ -5644,3 +5645,171 @@ a img {
     margin-bottom: 10px;
   }
   
+
+  .tech-section {
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .tech-category {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .tech-category h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #343a40;
+    text-transform: uppercase;
+  }
+  
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .tech-icons img,
+  .tech-icons i {
+    height: 60px;
+    width: 60px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .tech-icons img:hover,
+  .tech-icons i:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (min-width: 768px) {
+    .tech-section {
+      padding: 40px;
+    }
+  
+    .tech-category {
+      display: inline-block;
+      width: 45%;
+      margin: 20px;
+    }
+  }
+
+
+  /*experience*/
+  
+  /* Container for the section */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section title */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Individual experience item */
+.experience-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience header */
+.experience-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Company logo with larger size and spacing */
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    margin-right: 20px;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Job details next to the logo */
+.job-details {
+    flex: 1;
+}
+
+/* Job title */
+.job-details h2 {
+    font-size: 1.6rem;
+    color: #1488CC;
+    margin-bottom: 5px;
+}
+
+/* Company name */
+.job-details h3 {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Date range */
+.date {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Details list */
+.details {
+    padding-left: 20px;
+}
+
+.details li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .experience-item {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company-logo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .job-details h2 {
+        font-size: 1.4rem;
+    }
+
+    .job-details h3 {
+        font-size: 1.1rem;
+    }
+}
