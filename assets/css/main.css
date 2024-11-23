@@ -5086,6 +5086,7 @@ a img {
 }
 
 /* Responsive Design */
+
 @media (max-width: 600px) {
     .project-image {
         height: 150px;
@@ -5551,6 +5552,8 @@ a img {
     text-align: center;
     margin-bottom: 30px;
     color: #333;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
   }
   
   /* Timeline Styling */
